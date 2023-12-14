@@ -1,3 +1,7 @@
+body {
+    --main-color: #5362CE;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -9,23 +13,14 @@
     justify-content: space-between;
     width: 100%;
     height: 60px;
-    background-color: #5362CE;
+    background-color: var(--main-color);
 }
 
-.logo-circle {
-    margin-left: 15px;
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-text {
-    font-weight: bolder;
+.logo {
+    margin-left: 20px;
     color: white;
-
+    font-weight: bolder;
+    font-size: large;
 }
 
 .search-bar {
@@ -33,8 +28,8 @@
     justify-content: left;
     padding-left: 20px; 
     background-color: white;
-    width: 380px;
-    height: 40px;
+    width: 25rem;
+    height: 2.5rem;
     border: 0px;
     border-radius: 20px;
 }
@@ -42,36 +37,26 @@
 .search-bar::placeholder {
     color: #d1d1d1;
 }
-.icon {
-    margin-left: 20px;
-}
 
 .login-signup {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-right: 20px;
     width: 160px;
     height: 40px;
 }
 
-.login {
-    color: white;
-    width: 80px;
-    height: 30px;
-    background-color:#5362CE;
-    border: 0px;
-    border-radius: 10px;
+.icon {
+    width: 2rem;
+    height: 2rem;
 }
 
-.signup {
-    color: #5362CE;
-    width: 80px;
-    height: 30px;
+.profile {
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: white;
-    border-radius: 10px;
-    border: 0px;
-    cursor: pointer;
+    border-radius: 20px;
 }
 
 .information {
@@ -114,3 +99,12 @@ h1 {
     font-size: x-large;
     font-weight: bold;
 }
+
+@media screen and (max-width: 530px) {
+    .img {
+        width: 100%;
+    }
+    .folder {
+        display: block;
+    }
+  }
