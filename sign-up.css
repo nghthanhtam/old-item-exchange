@@ -1,5 +1,9 @@
 * {
   font-family: "Times New Roman", Times, serif;
+  --purple: #5362ce;
+  --white: #f8f8f8;
+  --black: #000000;
+  --light-purple: #5361ce98;
 }
 
 body {
@@ -7,20 +11,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /*background: url("https://i.pinimg.com/564x/6c/c6/7d/6cc67d2f99ee03190294a8c5d5c6f541.jpg") no-repeat;*/
   background-size: cover;
   background-position: center;
-  background-color: #5362ce;
+  background-color: var(--purple);
 }
 
-.purple {
-  color: #5362ce;
-}
 .wrapper {
   display: flex;
   text-align: center;
-  background-color: #f8f8f8;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 2em;
   padding: 3em;
   max-width: 30em;
@@ -39,7 +39,7 @@ body {
   height: 2.5em;
   overflow: hidden;
   border-radius: 50%;
-  background: #5362ce;
+  background: var(--purple);
 }
 
 .wrapper form .avatar-container img {
@@ -56,8 +56,9 @@ body {
 
 .wrapper form .input-box input {
   border: none;
-  border-bottom: 2px solid #5362ce;
-  background-color: #f8f8f8;
+  outline: none;
+  border-bottom: 2px solid var(--purple);
+  background-color: var(--white);
   height: 100%;
   width: 100%;
 }
@@ -65,10 +66,17 @@ body {
 .wrapper form .btn {
   width: 10em;
   height: 3em;
-  background-color: #5362ce;
-  color: #f8f8f8;
+  background-color: var(--purple);
+  color: var(--white);
   border-radius: 2em;
-  border-color: #5362ce;
+  border-color: var(--purple);
+  cursor: pointer;
+}
+
+.wrapper form .btn:hover {
+  background-color: var(--light-purple);
+  transition: background-color 0.3s ease;
+  border-color: var(--light-purple);
 }
 
 .text-size {
@@ -77,10 +85,14 @@ body {
 
 .wrapper .media-logo {
   height: 1.5em;
-  /*background-color: #5362ce;*/
 }
 .wrapper .media-logo img {
   width: 30%;
   height: 100%;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.wrapper .media-logo img:hover {
+  opacity: 0.5;
 }
