@@ -64,6 +64,11 @@ body {
     cursor: pointer;
 }
 
+.login:hover {
+    background-color: white;
+    color: var(--main-color)
+}
+
 .signup {
     color: var(--main-color);
     width: 80px;
@@ -72,6 +77,11 @@ body {
     border-radius: 10px;
     border: 0px;
     cursor: pointer;
+}
+
+.signup:hover{
+    background-color: #4b58b8;
+    color: white;
 }
 
 .information {
