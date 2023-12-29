@@ -96,9 +96,14 @@ body {
   opacity: 0.5;
 }
 
-/* for log in screen */
 .forgot-text {
   width: 100%;
   margin: 0.25em;
   text-align: right;
+}
+@media screen and (max-width: 530px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 2em;
+  }
 }
