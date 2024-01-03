@@ -1,0 +1,105 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  --purple: #5362ce;
+  --white: #f8f8f8;
+  --black: #000000;
+  --light-purple: #5361ce98;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--purple);
+}
+
+.wrapper {
+  display: flex;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 2em;
+  padding: 3em;
+  max-width: 30em;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.wrapper form .avatar-container {
+  width: 2.25em;
+  height: 2.5em;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--purple);
+}
+
+.wrapper form .avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper form .input-box {
+  height: 10%;
+  width: 100%;
+  margin: 0 0 0.75em;
+}
+
+.wrapper form .input-box input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--purple);
+  background-color: var(--white);
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper form .btn {
+  width: 10em;
+  height: 3em;
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: 2em;
+  border-color: var(--purple);
+  cursor: pointer;
+}
+
+.wrapper form .btn:hover {
+  background-color: var(--light-purple);
+  transition: background-color 0.3s ease;
+  border-color: var(--light-purple);
+}
+
+.text-size {
+  font-size: 0.75em;
+}
+
+.wrapper .media-logo {
+  height: 1.5em;
+}
+.wrapper .media-logo img {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.wrapper .media-logo img:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 530px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 2em;
+  }
+}

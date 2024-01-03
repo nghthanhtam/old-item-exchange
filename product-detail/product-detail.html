@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="product-detail.js"></script>
+    <title>Product Detail</title>
+    <link rel="stylesheet" type="text/css" href="product-detail.css" />
+  </head>
+
+  <body>
+    <div class="navbar-container">
+      <object class="embedded-content" type="text/html" data="../nav-bar/nav-bar.html"></object>
+    </div>
+    
+    <div class="wrapper">
+      <!-- Try this link: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Harry_Potter_and_the_Order_of_the_Phoenix_poster.jpg/330px-Harry_Potter_and_the_Order_of_the_Phoenix_poster.jpg" -->
+      <div class="image">
+        <img src="../source images/harry-potter-book2.jpg" alt="An image" />
+      </div>
+      <div class="info">
+        <p class="title">Harry Potter - An English Book</p>
+        <p class="categories">Fantasy, Novel, Children</p>
+        <p class="description-title">Description:</p>
+        <p class="description">
+          Harry Potter is a series of seven fantasy novels written by British
+          author J. K. Rowling. The novels chronicle the lives of a young
+          wizard, Harry Potter, and his friends Hermione Granger and Ron
+          Weasley, all of whom are students at Hogwarts School of Witchcraft and
+          Wizardry.
+        </p>
+        <div class="status">
+          <div><p class="status-text">Status:</p></div>
+          <div class="status-boxes">
+            <div class="excellent box">Excellent</div>
+            <div class="new box">New</div>
+            <div class="old box">Old</div>
+          </div>
+        </div>
+        <p class="location-text">
+          Location:<span class="location"> District 1 </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="foot-container">
+      <div class="user-display">
+        <div class="user-avatar">
+          <img
+            src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg"
+            alt="User Avatar"
+          />
+        </div>
+        <div class="user-info">
+          <div class="username">Username</div>
+          <div class="stars">
+            <img src="../source images/star.png" />
+            <img src="../source images/star.png" />
+            <img src="../source images/star.png" />
+            <img src="../source images/star.png" />
+            <img src="../source images/star.png" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Add functions for these 2 buttons -->
+      <div class="btn-display">
+        <!---->
+        <button class="btn-add-to-cart" type="button" onclick="">
+          Add to cart
+        </button>
+        <!---->
+        <button class="btn-request" type="button" onclick="">Request</button>
+      </div>
+    </div>
+  </body>
+</html>

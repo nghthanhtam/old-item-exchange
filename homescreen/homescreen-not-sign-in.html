@@ -2,20 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="./homescreen-already-sign-in.css" />
+    <script src="homescreen-not-sign-in.js"></script>
+    <link rel="stylesheet" type="text/css" href="./homescreen-not-sign-in.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <head>
+  <head> 
 
   <body>
    <div class="container">
       <div class="searching">  
           <div class="logo"> Logo </div>
           <input class="search-bar" type="search" placeholder="Finding something?">
-          <div class="login-signup" class="space-between">
-            <img class="icon" src="https://img.upanh.tv/2023/12/14/shopping-cart.png" alt=" " >
-            <img class="icon" src="https://img.upanh.tv/2023/12/14/bell.png" alt=" ">
-            <div class="profile"> </div>
+          <div class="login-signup"> <!--link to login and signup-->
+            <button class ="login" type="button" onclick="navigateTo('../log-in/log-in.html')" > Log in </button>
+            <button class="signup" type="button" onclick="navigateTo('../sign-up/sign-up.html')" > Sign up </button> 
           </div> 
       </div> 
             
@@ -41,6 +40,7 @@
       </div>
 
       <br/>
+
     </div>
   </body>
 
