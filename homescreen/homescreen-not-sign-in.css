@@ -64,11 +64,6 @@ body {
     cursor: pointer;
 }
 
-.login:hover {
-    background-color: white;
-    color: var(--main-color)
-}
-
 .signup {
     color: var(--main-color);
     width: 80px;
@@ -77,11 +72,6 @@ body {
     border-radius: 10px;
     border: 0px;
     cursor: pointer;
-}
-
-.signup:hover{
-    background-color: #4b58b8;
-    color: white;
 }
 
 .information {
@@ -105,6 +95,7 @@ h1 {
     width: 350px;
     height: 300px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .picture {
