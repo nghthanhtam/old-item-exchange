@@ -6,23 +6,22 @@
   --white-grey: #d9d9d9;
   font-family: "Times New Roman", Times, serif;
 }
-/* Navigation bar */
-.navbar-container {
-  width: 100%;
-  height: 4.5em;
-  margin: 0 auto; /* Center the container */
-  display: block; /* Ensure it behaves as a block-level element */
-  padding: 0; /* Remove any padding */
-}
-.embedded-content {
-  width: 100%; /* Make the embedded content fill the width of the parent div */
-  height: fit-content; /* Make the embedded content fill the height of the parent div */
+/* Navigation bar style */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  margin:0;
-  padding:0;
+object.embedded-content {
+  width: 100%;
+  height: 4.5em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
 }
+
 /* Product image */
 .wrapper {
   display: flex;
