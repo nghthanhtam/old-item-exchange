@@ -10,7 +10,7 @@
 .small-font {
   font-size: small;
 }
-/* Navigation bar */
+/* Navigation bar style */
 body {
   margin: 0;
   padding: 0;
@@ -182,6 +182,7 @@ button:hover {
 .user-and-request {
   display: flex;
   margin: 0.5em;
+  align-items: center;
 }
 .username-and-star {
   width: 60%;
