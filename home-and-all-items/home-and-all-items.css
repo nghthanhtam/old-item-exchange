@@ -116,7 +116,7 @@ button:hover {
 }
 .section {
   border: 1px solid var(--white);
-  width: 20%;
+  width: 15%;
   height: 2.5em;
   display: flex;
   flex-grow: 1;
@@ -205,6 +205,8 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+/*Add btn-delete here*/
+
 .btn-request {
   border: none;
   width: 40%;
@@ -214,6 +216,8 @@ button:hover {
 .btn-request:hover {
   background-color: var(--light-purple);
 }
+/* add btn-delete hover here*/
+
 .stars img {
   width: 0.75em;
 }
@@ -236,5 +240,8 @@ button:hover {
   }
   .item-wrapper {
     width: 45%;
+  }
+  .section{
+    font-size: x-small;
   }
 }
