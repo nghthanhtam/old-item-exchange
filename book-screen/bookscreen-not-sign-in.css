@@ -50,6 +50,7 @@ button:hover {
 }
 
 /* nav-bar */
+/*
 .searching {
     display: flex;
     justify-content: space-between;
@@ -101,7 +102,22 @@ button:hover {
     background-color: var(--white);
     border-radius: 20px;
 }
-
+*/
+/* Navigation bar style */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  object.embedded-content {
+    width: 100%;
+    height: 4.5em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
 @media screen and (max-width: 530px) {
     .img {
       width: 100%;

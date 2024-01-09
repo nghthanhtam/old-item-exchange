@@ -10,60 +10,20 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: normal;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
-
-/* nav-bar */
-.searching {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Navigation bar style */
+  
+  object.embedded-content {
     width: 100%;
-    height: 60px;
-    background-color: var(--main-color);
-  }
-
-.logo {
-    margin-left: 20px;
-    color: var(--white);
-    font-weight: bolder;
-    font-size: large;
-  }
-
-.search-bar {
+    height: 4.5em;
+    margin: 0 auto;
     display: flex;
-    justify-content: left;
-    padding-left: 20px;
-    background-color: var(--white);
-    width: 25rem;
-    height: 2.5rem;
-    border: 0px;
-    border-radius: 20px;
-}
-
-.search-bar::placeholder {
-    color: var(--white-gray);
-}
-
-.login-signup {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
-    width: 160px;
-    height: 40px;
-}
-
-.icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-.profile {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--white);
-    border-radius: 20px;
-}
+    justify-content: space-between;
+    padding: 0;
+  }
 
 @media screen and (max-width: 530px) {
     .img {
@@ -86,7 +46,7 @@ body {
     display: block;
     padding: 0;
   }
-  .embedded-content {
+.embedded-content {
     width: 100%;
     height: fit-content;
   }

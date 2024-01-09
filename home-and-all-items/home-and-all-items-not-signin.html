@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home & Products | Not Sign In</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <style>
+      .btn-delete {
+        display: none;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!--Nav bar code-->
+    <object
+      class="embedded-content"
+      type="text/html"
+      data="../nav-bar/nav-bar-not-sign-in.html"
+    ></object>
+    
+    <!--Body-->
+    <div class="user-wrapper">
+      <div class="user-tag">
+        <div class="seller-info">
+          <div class="avatar-sec">
+            <img
+              src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg"
+              alt="User Avatar"
+            />
+          </div>
+
+          <div class="info-tag">
+            <p class="bold">USERNAME</p>
+            <p class="small-font">Join from 2021</p>
+            <div class="stars">
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="followButton" onclick="toggleFollow()" type="button">
+            Follow
+          </button>
+          <button class="chat" type="button" onclick="">Chat</button>
+        </div>
+      </div>
+
+      <div class="sum-info">
+        <p>Product:</p>
+        <p id="followerCount">Followers: <span id="count">0</span></p>
+        <p>Respond ratings:</p>
+      </div>
+    </div>
+
+    <div class="sub-navbar-wrapper">
+      <div class="section">Products</div>
+      <div class="section">Request</div>
+      <div class="section">Review</div>
+      <div class="section">Order History</div>
+      <div class="section">Appointment</div>
+    </div>
+<!--
+    <div class="products-wrapper">
+      <div class="item-wrapper">
+        <div
+          class="product-img"
+          onclick="navigateTo('../product-detail/product-detail.html')"
+        >
+          <img src="../source images/harry-potter-book2.jpg" alt="img1" />
+        </div>
+        <div
+          class="product-info"
+          onclick="navigateTo('../product-detail/product-detail.html')"
+        >
+          <p class="bold">Harry Potter - An English Book</p>
+          <p class="small-font">Fantasy, Children, Novel</p>
+        </div>
+        <div class="user-and-request">
+          <div class="img-container">
+            <img
+              src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg"
+              alt="avatar"
+            />
+          </div>
+          <div class="username-and-star">
+            <div class="username small-font bold">Username</div>
+            <div class="stars">
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+            </div>
+          </div>
+          <button class="btn-request" type="button">Request</button>
+        </div>
+      </div>
+      <div class="item-wrapper"></div>
+      <div class="item-wrapper"></div>
+      <div class="item-wrapper"></div>
+    </div>
+  -->
+    <div class="products-wrapper" id="productContainer"></div>
+    <script src="../script.js"></script>
+  </body>
+</html>

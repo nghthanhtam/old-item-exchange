@@ -1,14 +1,22 @@
 <nav class="searching">
   <div class="logo">Logo</div>
   <input class="search-bar" type="search" placeholder="Finding something?" />
-  <div class="login-signup" class="space-between">
-    <img
-      class="icon"
-      src="https://img.upanh.tv/2023/12/14/shopping-cart.png"
-      alt=" "
-    />
-    <img class="icon" src="https://img.upanh.tv/2023/12/14/bell.png" alt=" " />
-    <div class="profile"></div>
+  <div class="login-signup">
+    <!--link to login and signup-->
+    <button
+      class="login"
+      type="button"
+      onclick="navigateTo('../log-in/log-in.html')"
+    >
+      Log in
+    </button>
+    <button
+      class="signup"
+      type="button"
+      onclick="navigateTo('../sign-up/sign-up.html')"
+    >
+      Sign up
+    </button>
   </div>
 </nav>
 
@@ -21,12 +29,12 @@
     --white-grey: #d9d9d9;
     font-family: "Times New Roman", Times, serif;
   }
-  body{
+  body {
     overflow: hidden;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
-  
+
   .searching {
     display: flex;
     justify-content: space-between;
@@ -34,11 +42,6 @@
     width: 100%;
     height: 60px;
     background-color: var(--purple);
-  }
-
-  .space-around {
-    display: flex;
-    justify-content: space-around;
   }
 
   .logo {
@@ -67,23 +70,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
-    width: 160px;
-    height: 40px;
+    margin-right: 1.25em;
+    width: 8em;
+    height: 2.5em;
+  }
+  button:hover {
+    cursor: pointer;
   }
 
-  .icon {
-    width: 2rem;
-    height: 2rem;
+  .hover-pointer:hover {
+    cursor: pointer;
   }
 
-  .profile {
-    width: 2.5rem;
-    height: 2.5rem;
+  .hover-area:hover {
+    background-color: var(--white-grey);
+  }
+  button.login,
+  button.signup {
+    border: none;
+    width: 4em;
+    height: 2em;
+    border-radius: 1em;
+  }
+  .login {
+    background-color: var(--purple);
+    color: var(--white);
+  }
+  .login:hover {
+    background-color: var(--light-purple);
+  }
+  .signup {
     background-color: var(--white);
-    border-radius: 20px;
+    color: var(--purple);
   }
-
+  .signup:hover {
+    background-color: var(--white-grey);
+  }
   @media screen and (max-width: 530px) {
     .img {
       width: 100%;
@@ -91,10 +113,14 @@
     .folder {
       display: block;
     }
-    .logo{
+    .logo {
       font-size: medium;
       margin-right: 0.5em;
-    
     }
   }
 </style>
+<script>
+  function navigateTo(url) {
+    window.parent.location.href = url;
+  }
+</script>

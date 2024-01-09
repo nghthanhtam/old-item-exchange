@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home & Products</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <style>
+      .btn-request {
+        display: none;
+      }
+      #popupForm{
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Nav bar code-->
+    <object
+      class="embedded-content"
+      type="text/html"
+      data="../nav-bar/nav-bar.html"
+    ></object>
+
+    <!--Body-->
+    <div class="user-wrapper">
+      <div class="user-tag">
+        <div class="seller-info">
+          <div class="avatar-sec">
+            <img
+              src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg"
+              alt="User Avatar"
+            />
+          </div>
+
+          <div class="info-tag">
+            <p class="bold">USERNAME</p>
+            <p class="small-font">Join from 2021</p>
+            <div class="stars">
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+              <img src="../source images/star.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <!--
+          <button id="followButton" onclick="toggleFollow()" type="button">
+            Follow
+          </button>
+        -->
+          <!-- Trigger button to open the pop-up form -->
+          <button class="add-pro-button" onclick="openPopupForm()">
+            Add Product
+          </button>
+          <button class="chat" type="button" onclick="">Chat</button>
+        </div>
+      </div>
+
+      <div class="sum-info">
+        <p>Product:</p>
+        <p id="followerCount">Followers: <span id="count">0</span></p>
+        <p>Respond ratings:</p>
+      </div>
+    </div>
+
+    <div class="sub-navbar-wrapper">
+      <div class="section">Products</div>
+      <div class="section">Request</div>
+      <div class="section">Review</div>
+      <div class="section">Order History</div>
+      <div class="section">Appointment</div>
+    </div>
+
+    <!-- Pop-up Form -->
+    <div class="overlay" id="overlay" onclick="closePopupForm()"></div>
+    <form class="popup-form" id="popupForm">
+      <div class="form-component">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required />
+      </div>
+
+      <div class="form-component">
+        <label for="productDescription">Product Description:</label>
+        <textarea id="productDescription" required></textarea>
+      </div>
+
+      <div class="form-component">
+        <label for="categories">Categories:</label>
+        <input type="text" id="categories" required />
+      </div>
+
+      <div class="form-component">
+        <label for="location">Location:</label>
+        <input type="text" id="location" required />
+      </div>
+
+      <div class="form-component">
+        <label for="status">Status:</label>
+        <select id="status" required>
+          <option value="excellent">Excellent</option>
+          <option value="new">New</option>
+          <option value="old">Old</option>
+        </select>
+      </div>
+
+      <div class="form-component">
+        <label for="productImage">Upload Your Photo:</label>
+        <input
+          type="file"
+          id="productImage"
+          accept="image/*"
+          onchange="previewImage()"
+          required
+        />
+
+        <div id="imagePreview"></div>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" onclick="addProduct()">Add Product</button>
+        <button type="button" onclick="closePopupForm()">Cancel</button>
+      </div>
+    </form>
+
+    <div class="products-wrapper" id="productContainer"></div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

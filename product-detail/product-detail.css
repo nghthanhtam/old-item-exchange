@@ -6,33 +6,34 @@
   --white-grey: #d9d9d9;
   font-family: "Times New Roman", Times, serif;
 }
-/* Navigation bar */
-.navbar-container {
+/* Navigation bar style */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+object.embedded-content {
   width: 100%;
   height: 4.5em;
-  margin: 0 auto; /* Center the container */
-  display: block; /* Ensure it behaves as a block-level element */
-  padding: 0; /* Remove any padding */
-}
-.embedded-content {
-  width: 100%; /* Make the embedded content fill the width of the parent div */
-  height: fit-content; /* Make the embedded content fill the height of the parent div */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
 }
 
 /* Product image */
 .wrapper {
   display: flex;
   flex-direction: row;
-  margin: 2% 2% 0 2%;
+  margin: 2% 2% 0% 2%;
 }
 .image,
 .info {
   flex: 1;
 }
 .image {
-  width: 100%;
   height: 25em;
-  margin-right: 2%;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -46,7 +47,9 @@ img {
 
 /* Product info */
 .wrapper .info {
+  width: auto;
   font-weight: bold;
+  margin-left: 2%;
 }
 .title {
   font-size: 2em;
@@ -68,7 +71,7 @@ img {
 .status-boxes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .box {
   display: flex;
@@ -97,6 +100,7 @@ img {
   width: 100%;
   height: 4.5em;
   overflow: hidden;
+  margin-left: 2%;
 }
 .user-display,
 .btn-display {
@@ -105,13 +109,16 @@ img {
 .user-avatar {
   display: flex;
   align-self: center;
-  margin-left: 2%;
-}
-.user-avatar img {
   width: 3.5em;
   height: 3.5em;
   border-radius: 50%;
   border: 2px solid var(--purple);
+  overflow: hidden;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .user-info {
@@ -132,11 +139,13 @@ img {
 
 .btn-display {
   display: flex;
+  justify-content: center;
 }
 button {
-  width: 50%;
+  width: 45%;
   border: none;
   font-size: 2.15em;
+  cursor: pointer;
 }
 .btn-add-to-cart {
   background-color: var(--white);
