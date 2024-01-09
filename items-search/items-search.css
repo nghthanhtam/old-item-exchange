@@ -1,0 +1,151 @@
+body {
+    --main-color: #5362CE;
+    --place-holder: #d1d1d1;
+    --sub-color: #EAECFA;
+    --dark-grey: #7a7c83;
+    --white-grey: #d4d4d4;
+    font-size: normal;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.bold {
+    font-weight: bolder;
+}
+.large {
+    font-size: large;
+}
+.larger {
+    font-size: x-large;
+}
+.small {
+    font-size: small;
+}
+.smaller {
+    font-size: x-small;
+}
+.dark-grey {
+    color: #7a7c83;
+}
+.white-grey {
+    color: #d4d4d4;
+}
+.white {
+    color: white;
+}
+.align-left {
+    align-self: flex-start;
+}
+h1 {
+    margin-left: 20px;
+    font-weight: bolder;
+}
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hover-area:hover {
+    background-color: var(--white-grey);
+}
+
+.hover-pointer:hover {
+    cursor: pointer;
+    color: var(--dark-grey);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.searching {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0.25rem 0.25rem 0 var(--dark-grey);
+}
+
+.search-bar {
+    padding-left: 20px; 
+    background-color: white;
+    width: 65%;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.search-bar::placeholder {
+    color: var(--place-holder);
+}
+
+.cancel {
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    font-size: large;
+}
+
+.margin-left {
+    margin: 0 0 0 3%;
+}
+
+hr {
+    border-color: white;
+    border-width: 0.25px;
+    margin: 1rem 0 1rem 0;
+}
+
+.topic {
+    position: relative;
+    display: inline-block;
+    width: 42.5%;
+    margin: 0 0 1rem 0;
+}
+
+.pic {
+    width: 100%;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+.title-topic {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 530px) {
+    .img {
+        width: 100%;
+    }
+    .space-around {
+        flex-direction: column;
+    }
+
+    .topic {
+        width: 100%;
+    }
+
+    .cancel {
+        font-size: large;
+    }
+
+    .icon {
+        width: 1rem;
+        height: 1rem;
+    }
+  }
