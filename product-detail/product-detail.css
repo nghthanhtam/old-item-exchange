@@ -101,6 +101,7 @@ img {
   height: 4.5em;
   overflow: hidden;
   margin-left: 2%;
+  cursor: pointer;
 }
 .user-display,
 .btn-display {

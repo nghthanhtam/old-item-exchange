@@ -1,6 +1,11 @@
 <nav class="searching">
-  <div class="logo">Logo</div>
-  <input class="search-bar" type="search" placeholder="Finding something?" />
+  <div
+    class="logo"
+    onclick="navigateTo('../home-screen/homescreen-already-sign-in.html')"
+  >
+    Logo
+  </div>
+  <input class="search-bar" type="search" placeholder="Finding something?" onclick="navigateTo('../items-search/items-search.html')"/>
   <div class="login-signup" class="space-between">
     <img
       class="icon"
@@ -8,7 +13,10 @@
       alt=" "
     />
     <img class="icon" src="https://img.upanh.tv/2023/12/14/bell.png" alt=" " />
-    <div class="profile"></div>
+    <div
+      class="profile"
+      onclick="navigateTo('../home-and-all-items/home-and-all-items.html')"
+    ></div>
   </div>
 </nav>
 
@@ -21,12 +29,12 @@
     --white-grey: #d9d9d9;
     font-family: "Times New Roman", Times, serif;
   }
-  body{
+  body {
     overflow: hidden;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
-  
+
   .searching {
     display: flex;
     justify-content: space-between;
@@ -46,6 +54,7 @@
     color: var(--white);
     font-weight: bolder;
     font-size: large;
+    cursor: pointer;
   }
 
   .search-bar {
@@ -75,6 +84,7 @@
   .icon {
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
   }
 
   .profile {
@@ -82,6 +92,7 @@
     height: 2.5rem;
     background-color: var(--white);
     border-radius: 20px;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 530px) {
@@ -91,10 +102,15 @@
     .folder {
       display: block;
     }
-    .logo{
+    .logo {
       font-size: medium;
       margin-right: 0.5em;
-    
     }
   }
 </style>
+<script>
+  // Function to navigate to url
+  function navigateTo(url) {
+    window.parent.location.href = url;
+  }
+</script>

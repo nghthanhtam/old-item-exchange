@@ -1,4 +1,3 @@
-/*
 // Track followers only when logged in
 var isFollowed = false;
 var followerCount = 0;
@@ -22,7 +21,7 @@ function updateFollowerCount() {
     : Math.max(followerCount - 1, 0);
   countElement.textContent = followerCount;
 }
-*/
+
 // Function to navigate to url
 function navigateTo(url) {
   window.parent.location.href = url;
