@@ -15,3 +15,7 @@ function toggleCollapse() {
 
   addEventListeners();
   window.addEventListener('resize', addEventListeners);
+// Function to navigate to url
+function navigateTo(url) {
+  window.parent.location.href = url;
+}

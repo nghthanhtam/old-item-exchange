@@ -101,12 +101,12 @@
   #followerCount {
     color: black;
   }
-  /*Added start*/
+  
   .chat:hover {
     background-color: var(--white);
     color: var(--purple);
   }
-  /*end*/
+  
   .sum-info {
     display: flex;
     flex-direction: column;
@@ -143,19 +143,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
-  
-  /*
-  .products-wrapper {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill,minmax(15em, 1fr));
-      grid-template-rows: auto auto;
-      grid-gap: 1em;
-      background-color: #1b2ca8;
-      justify-content: space-between;
-    }
-  */
+
   .item-wrapper {
     background-color: var(--light-white-grey);
     width: 15em;
@@ -305,7 +293,7 @@
     background-color: var(--white);
     color: var(--purple);
   }
-  /* fix thissssssssssssssssss*/
+
   /* Overlay to darken the background when the pop-up is open */
   .overlay {
     display: none;
@@ -317,7 +305,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
-  /* Media Query for small screens */
+
   @media only screen and (max-width: 530px) {
     body {
       width: 100%;
